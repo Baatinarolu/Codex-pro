@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex Pro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-theme {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .theme-toggle {
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px;
+            background: #444;
+            color: #fff;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><span class="theme-toggle" onclick="toggleTheme()">Toggle Theme</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Codex Pro</h1>
+        <p>Your guide to ethical hacking tutorials and help.</p>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About</h2>
+        <p>Learn more about Codex Pro and our mission to provide top-notch ethical hacking tutorials and assistance.</p>
+    </section>
+
+    <section id="topics" class="content">
+        <h2>Topics</h2>
+        <p>Explore tutorials on Python and Java. Get hands-on with examples and learn how to master these programming languages.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Contact information will be added here later.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Codex Pro. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            document.body.classList.toggle('light-theme');
+        }
+    </script>
+</body>
+</html>
